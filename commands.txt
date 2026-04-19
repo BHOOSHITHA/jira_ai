@@ -1,0 +1,25 @@
+# Setup Virtual Environment
+python -m venv venv
+
+# Activate Virtual Environment
+# For Windows:
+venv\Scripts\activate
+# For Mac/Linux:
+source venv/bin/activate
+
+# Install Dependencies
+pip install -r requirements.txt
+
+# Environment Setup
+# Create a .env file in the root directory (jira_ai_project) with the following content:
+# GEMINI_API_KEY=your_gemini_api_key
+# JIRA_URL=https://your_domain.atlassian.net
+# JIRA_EMAIL=your_email@example.com
+# JIRA_API_TOKEN=your_jira_api_token
+# JIRA_PROJECT_KEY=your_project_key
+
+# Run Jira Task Automation
+python part1_task_automation/main_task.py
+
+# Run Jira Test Automation 
+python part2_test_automation/main_test.py
